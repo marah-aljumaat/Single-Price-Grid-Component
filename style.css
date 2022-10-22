@@ -1,0 +1,157 @@
+/* - Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+font-family:'karla' , sans-serif;
+font-weight: 400;  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  font-family: "karla", sans-serif;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  min-height: 500px;
+  width: 645px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* feature section */
+
+.features {
+  padding: 32px;
+  background-color: #fff;
+  grid-column: 1/-1;
+  border-radius: 8px 8px 0 0;
+}
+
+.main-head {
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 24px;
+}
+
+.features-main-p {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  padding-bottom: 16px;
+  font-size: 18px;
+}
+.features-p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.7;
+}
+
+/* sign up section */
+
+.sign-up {
+  padding: 32px;
+  background-color: hsl(179, 61%, 44%);
+  border-bottom-left-radius: 8px;
+}
+
+.sign-up-main-p {
+  color: hsl(180, 41%, 77%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 18px;
+}
+
+.price {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sign-up-p {
+  color: hsl(178, 79%, 87%);
+  font-size: 17px;
+  padding-bottom: 45px;
+}
+
+a {
+  display: inline-block;
+}
+
+.btn:link,
+.btn:visited {
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  border-radius: 6px;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(71, 85%, 46%);
+}
+
+/* why us section */
+.why-us {
+  padding: 32px;
+  background-color: hsl(179, 47%, 52%);
+  border-bottom-right-radius: 8px;
+}
+
+.why-us-p {
+  color: hsl(178, 79%, 87%);
+
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: left;
+}
+
+.head {
+  color: #fff;
+  font-size: 19px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    margin: 45px;
+    width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .features {
+    grid-column: 1;
+  }
+
+  .sign-up {
+    border-radius: 0;
+  }
+
+  .why-us {
+    border-radius: 0 0 8px 8px;
+  }
+}
